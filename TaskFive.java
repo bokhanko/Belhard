@@ -8,7 +8,7 @@ public class TaskFive {
 		int c = (int) (a % 1000 * 0.01) * 10;
 		int e = (int) (a % 10000 * 0.001);
 		int f = b + d + c + e;
-		System.out.println("Обратное число = " + f);
+		System.out.println(" Р§РёСЃР»Рѕ  = " + f);
 	}
 
 }
