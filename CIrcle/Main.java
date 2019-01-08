@@ -11,6 +11,11 @@ public class Main {
 		Circle o2 = new Circle();
 		o2.distanseCircle(o1);
 		System.out.println("Растояние между центрами окружностей = " + o1.distanseCircle(o2));
+		if (o1.testCircle(o2)) {
+			System.out.println("Окружности имеют одну общую точку");
+		} else {
+			System.out.println("Окружности не имеют одной общей точки");
+		}
 		o1.LengthCircle();
 		System.out.println("Длинна первой окружности равна = " + o1.LengthCircle());
 		o1.moveCircle();// слегка не допер как красиво вывести "Измененные
@@ -18,11 +23,7 @@ public class Main {
 		o2.LengthCircle();
 		System.out.println("Длинна второй окружности равна = " + o2.LengthCircle());
 		o2.moveCircle();
-		if (o1.testCircle(o2)) {
-			System.out.println("Krugi peresekajutsa v odnoj tochke");
-		} else {
-			System.out.println("Krugi NE peresekajutsa v odnoj tochke");
-		}
+
 	}
 
 }
